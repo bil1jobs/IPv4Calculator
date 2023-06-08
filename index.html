@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Icons/computer.png" type="image/icon type" />
+    <title>IPv4 Calculator</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" id="reload"
+        ><img src="Icons/reload.png" alt="reload button"
+      /></a>
+      <div class="logo">
+        <h1>IPv4</h1>
+        <img src="Icons/computer.png" alt="logo" />
+        <h1>Calculator</h1>
+      </div>
+      <a href="#" id="nightMode"
+        ><img src="Icons/light.png" alt="light mode button"
+      /></a>
+    </nav>
+    <section>
+      <form>
+        <div class="inputs">
+          <div class="input">
+            <div class="text">Enter an Address</div>
+            <div class="input-field">
+              <input
+                id="adresse"
+                placeholder="Ex: 192.168.0.100/24"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="input hidden-form">
+            <div class="text">Network Address</div>
+            <div class="input-field">
+              <input disabled type="text" id="reseau" class="disabled" />
+            </div>
+          </div>
+          <div class="input hidden-form">
+            <div class="text">IP Address Pool</div>
+
+            <div class="input-field">
+              <input disabled type="text" id="plage" class="disabled" />
+            </div>
+          </div>
+          <div class="input hidden-form">
+            <div class="text">Broadcast Address</div>
+
+            <div class="input-field">
+              <input disabled type="text" id="diffusion" class="disabled" />
+            </div>
+          </div>
+          <div class="input hidden-form">
+            <div class="text">Network Mask</div>
+
+            <div class="input-field">
+              <input disabled type="text" id="masque" class="disabled" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">IP/Subnet Number</div>
+            <div class="input-field">
+              <select id="nbrMachine">
+                <option value="" selected disabled>Choose a Number</option>
+              </select>
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">Subnets Number</div>
+            <div class="input-field">
+              <select id="nbrSousReseau">
+                <option value="" selected disabled>Choose a Number</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input hidden-form">
+            <div class="text">Subnet Mask</div>
+
+            <div class="input-field">
+              <input
+                disabled
+                type="text"
+                id="masqueSousReseau"
+                class="disabled"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="inputs visible-form">
+          <div class="input">
+            <div class="text">Network Address</div>
+            <div class="input-field">
+              <input disabled type="text" id="reseau-clone" class="disabled" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">IP Address Pool</div>
+
+            <div class="input-field">
+              <input disabled type="text" id="plage-clone" class="disabled" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">Broadcast Address</div>
+
+            <div class="input-field">
+              <input
+                disabled
+                type="text"
+                id="diffusion-clone"
+                class="disabled"
+              />
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">Network Mask</div>
+
+            <div class="input-field">
+              <input disabled type="text" id="masque-clone" class="disabled" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="text">Subnet Mask</div>
+
+            <div class="input-field">
+              <input
+                disabled
+                type="text"
+                id="masqueSousReseau-clone"
+                class="disabled"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <table id="table">
+        <tr>
+          <th>SubnetID</th>
+          <th>Subnet Address</th>
+          <th>IP Address Pool</th>
+          <th>Subnet Broadcast Address</th>
+        </tr>
+        <tr>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <h1>REALISED by: Karim Boutih</h1>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="functions.js"></script>
+</html>
