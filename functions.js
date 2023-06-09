@@ -5,7 +5,7 @@ let r = getComputedStyle(root);
 
 nightModeButton.addEventListener("click", () => {
   let firstColor = r.getPropertyValue("--firstColor");
-  if (firstColor == "#222") {
+  if (firstColor != "#fff") {
     root.style.setProperty("--firstColor", " #fff");
     root.style.setProperty("--secondColor", " #222");
     root.style.setProperty("--grange", " rgb(111, 148, 48)");
